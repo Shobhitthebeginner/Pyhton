@@ -84,7 +84,7 @@ def home():
         cpp = cv2.VideoCapture(0)
         while True:
             success, img = cpp.read()
-            # imgS = cv2.resize(img, (0, 0), None, 0.25, 0.25)
+            imgS = cv2.resize(img, (0, 0), None, 0.25, 0.25)
             imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
             facesCurrFrame = face_recognition.face_locations(imgS)  # faces location in webcam
             encodeCurrFrame = face_recognition.face_encodings(imgS, facesCurrFrame)
