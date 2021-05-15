@@ -8,7 +8,7 @@ Flask
 httplib2
 numpy
 oauth2client
-opencv-python-headless
+opencv-contrib-python-headless
 Pyrebase
 requests
 gunicorn
