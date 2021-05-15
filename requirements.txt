@@ -5,7 +5,7 @@ Flask
 httplib2
 numpy
 oauth2client
-opencv-python --use-feature=2020-resolver
+opencv-python
 Pyrebase
 requests
 gunicorn
