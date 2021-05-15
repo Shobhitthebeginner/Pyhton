@@ -1,14 +1,11 @@
-CacheControl
-cmake
 dlib
 face-recognition
-face-recognition-models
 firebase-admin
 Flask
 httplib2
 numpy
 oauth2client
-opencv-python-headless --use-feature=2020-resolver
+opencv-python --use-feature=2020-resolver
 Pyrebase
 requests
 gunicorn
