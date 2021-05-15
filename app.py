@@ -73,7 +73,6 @@ app = flask.Flask(__name__)
 @app.route('/', methods=['GET'])
 def home():
     try:
-        print('hfisdnfsdnsdnfsdfnsldfl')
         for i in range(len(Urls)):
             req = urllib.request.urlopen(Urls[i])
             arr = np.asarray(bytearray(req.read()), dtype=np.uint8)
@@ -92,7 +91,7 @@ def home():
             for encodeFace, faceloc in zip(encodeCurrFrame, facesCurrFrame):
                 matches = face_recognition.compare_faces(encodeListKnown, encodeFace)
                 faceDis = face_recognition.face_distance(encodeListKnown, encodeFace)
-                print(faceDis)
+                
                 matchIndex = np.argmin(faceDis)
                 if matches[matchIndex]:
                     name = classNames[matchIndex].upper()
@@ -109,6 +108,5 @@ def home():
         cpp.release()
         return jsonify({"response" : 'hi this is python'})
     except KeyError:
-        print('hfisdnfsdnsdnfsdfnsldfl')
         return jsonify({"response" : 'error'})
 
