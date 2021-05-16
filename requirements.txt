@@ -1,0 +1,11 @@
+dlib
+face-recognition
+firebase-admin
+Flask
+httplib2
+numpy
+oauth2client
+opencv-python
+Pyrebase
+requests
+gunicorn
