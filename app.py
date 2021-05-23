@@ -9,6 +9,6 @@ app = flask.Flask(__name__)
 def home():
     try:
         return jsonify({"response" : 'hi this is python'})
-    except KeyError:
+    except:
         return jsonify({"response" : 'error'})
 
